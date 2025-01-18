@@ -1,11 +1,9 @@
 import OpenAI from "openai";
-import dotenv from 'dotenv';
 
-dotenv.config();
 
 const openai = new OpenAI(
     {
-        apiKey: process.env.OPENAI_API_KEY,
+        apiKey: '671439f75c5a4d47a48fca550aa31ebc',
         baseURL: 'https://api.aimlapi.com',
         dangerouslyAllowBrowser: true
     }
