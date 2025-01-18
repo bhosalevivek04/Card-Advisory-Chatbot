@@ -1,11 +1,13 @@
 import OpenAI from "openai";
-// import { createChatBotMessage, createClientMessage, createCustomMessage, userMessage } from "react-chatbot-kit/build/src/components/Chat/chatUtils";
+import dotenv from 'dotenv';
 
-const openai=new OpenAI(
+dotenv.config();
+
+const openai = new OpenAI(
     {
-        apiKey:'671439f75c5a4d47a48fca550aa31ebc',
-        baseURL:'https://api.aimlapi.com',
-        dangerouslyAllowBrowser:true
+        apiKey: process.env.OPENAI_API_KEY,
+        baseURL: 'https://api.aimlapi.com',
+        dangerouslyAllowBrowser: true
     }
 )
 
